@@ -7,7 +7,7 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:meteo="http://purl.org/ns/meteo#">
 <head>
-	<title>Temperature forecast for Galway, Ireland</title>
+	<title>Previsão do tempo para Galway, na Irlanda</title>
 	<link type="text/css" href="../style.css" rel="stylesheet" />
 	<script type="text/javascript" src="../jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="../data-highlight.js"></script>
@@ -15,22 +15,21 @@
 <body>
 	
 <div>
-	<button id="show-data">Show embedded data</button>
+	<button id="show-data">Mostrar dados</button>
 	<div id="hint">
 		<p>
-			To view the embedded data encoded in RDFa, hover over the red-dotted areas.
-			You can also <a href="http://inspector.sindice.com/inspect?url=http://5stardata.info/gtd-4.html">view the data externally</a> in the Web Data Inspector, or <a href="http://graphite.ecs.soton.ac.uk/browser/?uri=http%3A%2F%2F5stardata.info%2Fgtd-4.html">Graphite Browser</a> or other tools.
+			Para ver os dados em RDFa, passe o mouse por cima das áreas em pontilhado vermelho.
+			Você também pode <a href="http://inspector.sindice.com/inspect?url=http://5stardata.info/gtd-4.html">ver os dados</a> no Web Data Inspector, ou no <a href="http://graphite.ecs.soton.ac.uk/browser/?uri=http%3A%2F%2F5stardata.info%2Fgtd-4.html">Graphite Browser</a> ou em outras ferramentas.
 		</p>
 		<p>
-			In this 4 star example, we used the <a href="http://purl.org/ns/meteo#">Meteo</a> vocabulary to represent the temperature forecasts.
-		Each forecast has a URI (for example, '<a href="#forecast20101115">forecast for Monday, 15 November 2010</a>'), which can be used in another context.
-		</p>
+			Neste exemplo de 4 estrelas utilizamos o vocabulário <a href="http://purl.org/ns/meteo#">Meteo</a> para representar a previsão do tempo.
+		Cada previsão tem uma  URI (por exemplo, '<a href="#forecast20101115">previsão para segunda, dia 15 de novembro de 2010</a>'), que pode ser utilizada em outro contexto</p>
 
-		<p>If you view the source, the data looks like a hierarchical structure, but this is an illusion. Really it is just expressing a set of individual facts about things; "#Galway" is "a Place", "#Galway" has a forecast "#forecast20101113", "#forecast20101113" is a prediction for "2010-11-13T00:00:00Z" and so forth. You can change the order of these facts without altering their meaning.</p>
+		<p>Se você observar a fonte verá que os dados parecem estruturados hierarquicamente, mas é uma ilusão, mas é só uma expressão de fatos individuais sobre coisas; "#Galway" é "um lugar", "#Galway" tem uma previsão "#previsao20101113", "#previsao20101113" é uma condicionante para "2010-11-13T00:00:00Z" e por aí vai. Você pode mudar a ordem destes fatores sem alterar seu significado.</p>
 
 	</div>
 </div>
-<h1 property="dcterms:title">Temperature forecast for Galway, Ireland</h1>
+<h1 property="dcterms:title">Previsão do tempo para Galway, Irlanda</h1>
 	
 <div id="data" about="#Galway" typeof="meteo:Place">
 <table border="1px">

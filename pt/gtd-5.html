@@ -7,38 +7,38 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:meteo="http://purl.org/ns/meteo#">
 <head>
-	<title>Temperature forecast for Galway, Ireland</title>
+	<title>Previsão do tempo para, Ireland</title>
 	<link type="text/css" href="../style.css" rel="stylesheet" />
 	<script type="text/javascript" src="../jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="../data-highlight.js"></script>
 </head>
 <body>
 <div>
-	<button id="show-data">Show embedded data</button>
+	<button id="show-data">Mostrar dados</button>
 	<div id="hint">
 		<p>
-			To view the embedded data encoded in <a href="http://rdfa.info/wiki/RDFa_Wiki">RDFa</a>, hover over the red-dotted areas.
-			You can also <a href="http://inspector.sindice.com/inspect?url=http://5stardata.info/gtd-5.html">view the data externally</a> in the Web Data Inspector, or <a href="http://graphite.ecs.soton.ac.uk/browser/?uri=http%3A%2F%2F5stardata.info%2Fgtd-5.html">Graphite Browser</a> or other tools.
+			Para ver os dados embedados em  <a href="http://rdfa.info/wiki/RDFa_Wiki">RDFa</a>, passe o mouse por cima da linha pontilhada.
+			Você também pode <a href="http://inspector.sindice.com/inspect?url=http://5stardata.info/gtd-5.html">ver os dados</a> No Web Data Inspector, ou <a href="http://graphite.ecs.soton.ac.uk/browser/?uri=http%3A%2F%2F5stardata.info%2Fgtd-5.html">Graphite Browser</a> ou outras ferramentas.
 		</p>
 		<p>
-			In this 5 star example, we used the <a href="http://purl.org/ns/meteo#">Meteo</a> vocabulary to represent the temperature forecasts.
-			Each forecast has a URI (for example, '<a href="#forecast20101115">forecast for Monday, 15 November 2010</a>'), which can be used in another context.
-			Additionally, through linking the place (<code>#Galway</code>) to the DBpedia entry <a href="http://dbpedia.org/resource/Galway">Galway</a>,
-			we have disambiguated it. Eventually we provided context for the interpretation of the <code>#temp</code> through the respective typed links to DBpedia (<a href="http://dbpedia.org/resource/Temperature">Temperature</a> and <a href="http://dbpedia.org/resource/Celsius">Celsius</a>).
+			Neste exemplo de 5 estrelas, nós utilizamos o vocabulário <a href="http://purl.org/ns/meteo#">Meteo</a> para representar a temperatura. 
+			Cada tomada de temperatura tem uma URI (por exemplo, '<a href="#forecast20101115">previsão para segunda, 15 de novembro de 2010</a>'), que pode ser utilizado em outro contexto.
+			Adicionalmente, linkando o (<code>#Galway</code>) à entrada da DBpedia <a href="http://dbpedia.org/resource/Galway">Galway</a>,
+			fizemos a desambiguação. Contextualizamos a interpretação da <code>#temp</code> através de seus respectivos links para a DBpedia(<a href="http://dbpedia.org/resource/Temperature">Temperatura</a> e <a href="http://dbpedia.org/resource/Celsius">Celsius</a>).
 		</p>
 	</div>
 </div>
-<h1 property="dcterms:title">Temperature forecast for Galway, Ireland</h1>
+<h1 property="dcterms:title">Previsão do tempo para Ireland</h1>
 	
 <div id="data" about="#Galway" typeof="meteo:Place">
 <span rel="owl:sameAs" resource="http://dbpedia.org/resource/Galway"></span>
 <table border="1px">
 	<tr>
-		<th>Day</th>
+		<th>Dia</th>
 		<th>
 			<div about="#temp">
-				Lowest 
-				<a rel="rdfs:seeAlso" href="http://en.wikipedia.org/wiki/Temperature" resource="http://dbpedia.org/resource/Temperature">Temperature</a>
+				Mínima 
+				<a rel="rdfs:seeAlso" href="http://en.wikipedia.org/wiki/Temperature" resource="http://dbpedia.org/resource/Temperature">Temperatura</a>
 				(<span rel="owl:sameAs" resource="http://dbpedia.org/resource/Celsius">&deg;C</span>)
 			</div>
 		</th>
@@ -46,7 +46,7 @@
 	<tr rel="meteo:forecast" resource="#forecast20101113">
 		<td>
 			<div about="#forecast20101113">
-				<span property="meteo:predicted" content="2010-11-13T00:00:00Z" datatype="xsd:dateTime">Saturday, 13 November 2010</span>
+				<span property="meteo:predicted" content="2010-11-13T00:00:00Z" datatype="xsd:dateTime">Sábado, 13 de novembro de 2010</span>
 			</div>
 		</td>
 		<td rel="meteo:temperature">
@@ -58,7 +58,7 @@
 	<tr rel="meteo:forecast" resource="#forecast20101114">
 		<td>
 			<div about="#forecast20101114">
-				<span property="meteo:predicted" content="2010-11-14T00:00:00Z" datatype="xsd:dateTime">Sunday, 14 November 2010</span>
+				<span property="meteo:predicted" content="2010-11-14T00:00:00Z" datatype="xsd:dateTime">Domingo, 14 de novembro de 2010</span>
 			</div>
 		</td>
 		<td rel="meteo:temperature">
@@ -70,7 +70,7 @@
 	<tr rel="meteo:forecast" resource="#forecast20101115">
 		<td>
 			<div about="#forecast20101115">
-				<span property="meteo:predicted" content="2010-11-15T00:00:00Z" datatype="xsd:dateTime">Monday, 15 November 2010</span>
+				<span property="meteo:predicted" content="2010-11-15T00:00:00Z" datatype="xsd:dateTime">Segunda, 15 de novembro de 2010</span>
 			</div>
 		</td>
 		<td rel="meteo:temperature">
@@ -87,10 +87,10 @@
 
 <div id="footer">
 	<span>
-		Last update: <span property="dcterms:date" datatype="xsd:date">2012-01-22</span> by <a rel="dcterms:creator" href="http://sw-app.org/mic.xhtml#i">Michael</a> |
+		Último update: <span property="dcterms:date" datatype="xsd:date">2012-01-22</span> por <a rel="dcterms:creator" href="http://sw-app.org/mic.xhtml#i">Michael</a> |
 	</span>
 	<span>
-		Code available via <a href="https://github.com/mhausenblas/5stardata.info">GitHub</a>
+		Código disponível em <a href="https://github.com/mhausenblas/5stardata.info">GitHub</a>
 	</span>
 </div>
 </body>
